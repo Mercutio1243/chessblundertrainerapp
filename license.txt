@@ -1,4 +1,4 @@
-MIT License
+MIT License for website template
 
 Copyright (c) 2020 Sandoche ADITTANE
 

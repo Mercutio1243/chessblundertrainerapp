@@ -19,20 +19,20 @@
 
 </head>
 <div class="hamburger-menu">
-    <input id="menu__toggle" type="checkbox" />
-    <label class="menu__btn" for="menu__toggle">
-      <span></span>
-    </label>
+	<input id="menu__toggle" type="checkbox" />
+	<label class="menu__btn" for="menu__toggle">
+		<span></span>
+	</label>
 
-    <ul class="menu__box">
-      		<li><a class="menu__item" href="index.html">Home</a></li>
-			<li><a class="menu__item" href="about.html">About</a></li>
-			<li><a class="menu__item" href="blunder.html">Avoid Blunders</a></li>
-			<li><a class="menu__item" href="mailto:chessblundertrainer@gmail.com">Contact</a></li>
-			<li><a class="menu__item" href="https://github.com/Mercutio1243/chessblundertrainerapp">Github</a></li>
-			<li><a class="menu__item" href="https://www.privacypolicies.com/live/c6d58317-e1ab-4292-8f11-71ea6ce60474">Privacy</a></li>
-    </ul>
-  </div>
+	<ul class="menu__box">
+		<li><a class="menu__item" href="index.html">Home</a></li>
+		<li><a class="menu__item" href="about.html">About</a></li>
+		<li><a class="menu__item" href="blunder.html">Avoid Blunders</a></li>
+		<li><a class="menu__item" href="mailto:chessblundertrainer@gmail.com">Contact</a></li>
+		<li><a class="menu__item" href="https://github.com/Mercutio1243/chessblundertrainerapp">Github</a></li>
+		<li><a class="menu__item" href="https://www.privacypolicies.com/live/c6d58317-e1ab-4292-8f11-71ea6ce60474">Privacy</a></li>
+	</ul>
+</div>
 
 
 <body>
@@ -134,6 +134,19 @@
 		window.onload = function () {
 			var tobi = new Tobi();
 		};
+	</script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			var menuToggle = document.getElementById('menu__toggle');
+			var menuBtn = document.querySelector('.menu__btn');
+
+			if (menuBtn) {
+				menuBtn.addEventListener('click', function (e) {
+					e.preventDefault(); // Prevent the default anchor behavior
+					menuToggle.checked = !menuToggle.checked; // Toggle the checkbox state
+				});
+			}
+		});
 	</script>
 
 </body>

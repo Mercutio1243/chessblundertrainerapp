@@ -103,6 +103,19 @@
 			var tobi = new Tobi();
 		};
 	</script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				var menuToggle = document.getElementById('menu__toggle');
+				var menuBtn = document.querySelector('.menu__btn');
+	
+				if (menuBtn) {
+					menuBtn.addEventListener('click', function (e) {
+						e.preventDefault(); // Prevent the default anchor behavior
+						menuToggle.checked = !menuToggle.checked; // Toggle the checkbox state
+					});
+				}
+			});
+		</script>
 
 </body>
 

@@ -315,7 +315,7 @@ html[dir=rtl] .app__logo-wrapper {
 }
 
 .darkmode-toggle {
-  z-index: 500;
+  z-index: 5;
 }
 
 .darkmode-background {

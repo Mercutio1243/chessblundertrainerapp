@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8" />
-	<title>About - Chess Blunder Trainer</title>
+	<title>Chess Blunder Trainer - About</title>
 
 	<meta name="description" content="Free app to replay blunders from your own chess games as personalized puzzles and improve your chess skills!" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -13,19 +13,53 @@
 	<meta property="og:description" content="Free app to replay blunders from your own chess games and improve your chess skills!" />
 	<meta property="og:image" content="https://www.chessblundertrainer.com/content/image/logo_app.png" />
 
-	<link rel="stylesheet" href="assets/tobi.css" />
 	<link rel="stylesheet" href="assets/style.css" />
+	<link rel="stylesheet" href="assets/menu.css" />
+	<link rel="stylesheet" href="assets/tobi.css" />
 
 </head>
 
+<div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
+
+    <ul class="menu__box">
+      		<li><a class="menu__item" href="index.html">Home</a></li>
+			<li><a class="menu__item" href="about.html">About</a></li>
+			<li><a class="menu__item" href="blunder.html">Avoid Blunders</a></li>
+			<li><a class="menu__item" href="mailto:chessblundertrainer@gmail.com">Contact</a></li>
+			<li><a class="menu__item" href="https://github.com/Mercutio1243/chessblundertrainerapp">Github</a></li>
+			<li><a class="menu__item" href="https://www.privacypolicies.com/live/c6d58317-e1ab-4292-8f11-71ea6ce60474">Privacy</a></li>
+    </ul>
+  </div>
+
 <body>
 	<main>
+		<header class="app__header container">
+			<div class="app__logo-wrapper"> <img class="app__logo" src="content/image/logo_app.png" alt="Chess Blunder Trainer App"></div>
+			<div class="app__infos">
+				<h1 class="app__name">Chess Blunder Trainer App</h1>
+				<p class="app__description">Replay blunders from your own chess games to improve your chess skills!</p>
+				<div class="app__buttons app__buttons--desktop">
+					<a href="https://play.google.com/store/apps/details?id&#x3D;com.cbt.chess_blunder_trainer" class="app__button-play" target="_blank" title="Get on Google Play">
+						<img src="assets/google-play-badge.png" alt="Get on Google Play">
+					</a>
+				</div>
+			</div>
+		</header>
+		<div class="app__buttons app__buttons--mobile container">
+			<a href="https://play.google.com/store/apps/details?id&#x3D;com.cbt.chess_blunder_trainer" class="app__button-play" target="_blank" title="Get on Google Play">
+				<img src="assets/google-play-badge.png" alt="Get on Google Play">
+			</a>
+		</div>
 		<article class="page">
 			<header class="page__header">
 				<h1 class="page__title">About</h1>
 			</header>
 			<div class="page__content">
-				<p>The chess blunder trainer is an app developed by Thomas Koeppen aka Mercutio1243.</p>
+				<p>The chess blunder trainer tool is a chess software developed by Thomas Koeppen aka Mercutio1243 to create personalized puzzles from chess blunders.</p>
 				<p>Please reach out via <a href="mailto:chessblundertrainer@gmail.com">chessblundertrainer@gmail.com</a> with any feedback or questions!</p>
 			</div>
 		</article>
@@ -40,14 +74,20 @@
 				</p>
 				<ul class="footer__links">
 					<li class="footer__link">
-						<a href="index.html">Main</a>
+						<a href="index.html">Home</a>
 					</li>
-					  <li class="footer__link">
+					<li class="footer__link">
+						<a href="about.html">About</a>
+					</li>
+					<li class="footer__link">
+						<a href="blunders.html">Blunders</a>
+					</li>
+					<li class="footer__link">
 						<a href="mailto:chessblundertrainer@gmail.com">Contact</a>
-					  </li>
-					  <li class="footer__link">
+					</li>
+					<li class="footer__link">
 						<a href="https://github.com/Mercutio1243/chessblundertrainerapp">Github</a>
-					  </li>
+					</li>
 					<li class="footer__link">
 						<a href="https://www.privacypolicies.com/live/c6d58317-e1ab-4292-8f11-71ea6ce60474">Privacy</a>
 					</li>

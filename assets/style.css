@@ -27,16 +27,24 @@ body {
   background-image: none;
   line-height: 1.4;
   background-attachment: fixed;
+  height: 100%;
+  min-height: 100vh;
 }
 
 /* Media query for desktop screens */
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   body {
   background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ4MCIgaGVpZ2h0PSI2NTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+ICAgIDxwYXRoIGQ9Ik0gODEzIDEyMjMgYyAtMzMxIDI0MyAtNDc0IDM1OSAtNjgwIC0zMDMgQyAtMjUgMjQ2IC0xMDMgMjQgNTkzIDM4IHEgMTMwNyAzMSA4NzQgODg3IHoiIGZpbGw9IiNmYmVlZWEiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==);
   background-size: cover;
-  background-position-x: 20vw;
-  /* background-position-y: 0vw; */
+  background-position-x: 5px;
   background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 1051px) {
+  body {
+    /* Calculate the position as half the excess width */
+    background-position-x: calc((100vw - 1051px) / 2 + 5px);
   }
 }
 
@@ -159,7 +167,6 @@ html[dir=rtl] .app__logo-wrapper {
 }
 .app__logo {
   border-radius: 22.5%;
-  /* mask-image: url("ios-mask.svg"); */
   mask-size: cover;
   width: 100%;
   height: auto;
@@ -186,7 +193,7 @@ html[dir=rtl] .app__logo-wrapper {
 @media (max-width: 768px) {
   .app__screenshots-list {
     padding: 32px;
-    width: 800px;
+    width: 640px;
   }
 }
 .app__screenshot {

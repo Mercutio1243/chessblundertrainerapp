@@ -26,7 +26,7 @@ body {
   font-size: var(--font-md);
   background-color: #fff;
   background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ4MCIgaGVpZ2h0PSI2NTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+ICAgIDxwYXRoIGQ9Ik0gNzUyIDY2MiBjIC0xNTQgMjUzIC00NzUgMTQ0IC02NjcgLTE3NSBDIC02NSAyMDAgLTYgLTQ5IDQzMSAzMCBxIDY3MyAxMzAgMzI3IDY0OSB6IiBmaWxsPSIjZmJlZWVhIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);
-  background-size: auto;
+  background-size: cover;
   background-position-x: 20vw;
   background-position-y: -10vh;
   background-repeat: no-repeat;

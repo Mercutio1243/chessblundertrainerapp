@@ -116,7 +116,8 @@
 		window.onload = function () {
 			var tobi = new Tobi();
 		};
-	</script>	<script>
+	</script>
+	<script>
 		document.addEventListener('DOMContentLoaded', function () {
 			var menuToggle = document.getElementById('menu__toggle');
 			var menuBtn = document.querySelector('.menu__btn');
@@ -128,6 +129,13 @@
 				});
 			}
 		});
+	</script>
+	<script>
+		var bg = jQuery("#bg1");
+		jQuery(window).resize("resizeBackground");
+		function resizeBackground() {
+			bg.height(jQuery(window).height() + 60);
+		}
 	</script>
 
 </body>

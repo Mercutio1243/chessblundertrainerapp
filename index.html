@@ -35,8 +35,10 @@
 
 	<ul class="menu__box">
 		<li><a class="menu__item" href="index.html">Home</a></li>
-		<li><a class="menu__item" href="about.html">About</a></li>
-		<li><a class="menu__item" href="blunder.html">Avoid Blunders</a></li>
+		<li><a class="menu__item" href="#screenshots">Screenshots</a></li>
+		<li><a class="menu__item" href="#how">How it works</a></li>
+		<li><a class="menu__item" href="#avoid">Avoid Blunders</a></li>
+		<li><a class="menu__item" href="#about">About</a></li>
 		<li><a class="menu__item" href="mailto:chessblundertrainer@gmail.com">Contact</a></li>
 		<li><a class="menu__item" href="https://github.com/Mercutio1243/chessblundertrainerapp">Github</a></li>
 		<li><a class="menu__item" href="https://www.privacypolicies.com/live/c6d58317-e1ab-4292-8f11-71ea6ce60474">Privacy</a></li>
@@ -63,7 +65,7 @@
 				<img src="assets/google-play-badge.png" alt="Get on Google Play">
 			</a>
 		</div>
-		<section class="app__screenshots app__section">
+		<section id="screenshots" class="app__screenshots app__section">
 			<div class="container">
 				<h2 class="app__section-title">Screenshots of the App</h2>
 			</div>
@@ -81,7 +83,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="app__fulldescription app__section container">
+		<section id="how" class="app__fulldescription app__section container">
 			<h2 class="app__section-title">How the Chess Blunder Trainer App Works</h2>
 			<div class="app__fulldescription-content">
 				<ol>
@@ -92,6 +94,40 @@
 					<li><strong>Enjoy</strong> the app free and without ads.</li>
 					<p> </p>
 				</ol>
+			</div>
+			<div class="app__buttons app__buttons--desktop">
+				<a href="https://play.google.com/store/apps/details?id&#x3D;com.cbt.chess_blunder_trainer" class="app__button-play" target="_blank" title="Get on Google Play">
+					<img src="assets/google-play-badge.png" alt="Get on Google Play">
+				</a>
+			</div>
+			<div class="app__buttons app__buttons--mobile container">
+				<a href="https://play.google.com/store/apps/details?id&#x3D;com.cbt.chess_blunder_trainer" class="app__button-play" target="_blank" title="Get on Google Play">
+					<img src="assets/google-play-badge.png" alt="Get on Google Play">
+				</a>
+			</div>
+		</section>
+		<section id="avoid" class="app__fulldescription app__section container">
+			<h2 class="app__section-title">Strategies to Avoid Blunders</h2>
+			<div class="app__fulldescription-content">
+				<p>While the chess blunder trainer app helps you to learn from your own blunders in past games, you will also need routines to avoid blunders in the first place. One proven approach is the <strong>Checks, Captures, and Threats (CCT)</strong> rule:</p>
+				<ul>
+					<li><strong>Checks:</strong> Check all checks that you can deliver to the opponent's king. Often, checks that do not seem to lead to anything, on closer inspection can open new ways of attack.</li>
+					<li><strong>Captures:</strong> Examine all possible captures of enemy pieces. Sometimes, a capture can open up the board or remove a key defender, leading to a more favorable position.</li>
+					<li><strong>Threats:</strong> Identify all threats you can make. A threat could be anything from threatening to win material in the next move to creating a strong positional advantage. It forces the opponent to react, e.g., by moving pieces, and may open new attack vectors.</li>
+				</ul>
+				<p>In addition, make sure that you do not focus exclusively on your own strategy but actively take the opponent into account.</p>
+				<ul>
+					<li><strong>Understand the opponent's plan:</strong> Look at your opponent's last move and ask yourself, "Why did they make this move? What has changed in the position? What are they going to do next?"</li>
+					<li><strong>Identify immediate threats:</strong> Use the CCT rule from your opponent's viewpoint to anticipate possible checks, captures, and threats. Make sure that have a counter to each of these moves, particularly if you are playing within opponent's half of the board.</li>
+					<li><strong>Handle time pressure:</strong> When in time pressure, aim to simplify the position: exchange pieces to reduce complications, avoid overly complicated calculations</li>
+				</ul>
+			</div>
+		</section>
+		<section id="about" class="app__fulldescription app__section container">
+			<h2 class="app__section-title">About the Software</h2>
+			<div class="app__fulldescription-content">
+				<p>The Chess Blunder Trainer is a chess software developed by Thomas Koeppen. The tool is available as a free Android app in the Google Play Store.</p>
+				<p>Please reach out via <a href="mailto:chessblundertrainer@gmail.com">chessblundertrainer@gmail.com</a> with any feedback or questions!</p>
 			</div>
 			<div class="app__buttons app__buttons--desktop">
 				<a href="https://play.google.com/store/apps/details?id&#x3D;com.cbt.chess_blunder_trainer" class="app__button-play" target="_blank" title="Get on Google Play">
@@ -116,12 +152,6 @@
 				<ul class="footer__links">
 					<li class="footer__link">
 						<a href="index.html">Home</a>
-					</li>
-					<li class="footer__link">
-						<a href="about.html">About</a>
-					</li>
-					<li class="footer__link">
-						<a href="blunder.html">Blunders</a>
 					</li>
 					<li class="footer__link">
 						<a href="mailto:chessblundertrainer@gmail.com">Contact</a>
@@ -151,6 +181,20 @@
 			}
 		});
 	</script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			// Select all menu items
+			var menuItems = document.querySelectorAll('.menu__box .menu__item');
+		
+			// Add click event listener to each menu item
+			menuItems.forEach(function(item) {
+				item.addEventListener('click', function() {
+					// Uncheck the menu toggle checkbox
+					document.getElementById('menu__toggle').checked = false;
+				});
+			});
+		});
+		</script>
 
 </body>
 

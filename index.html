@@ -45,7 +45,6 @@
 	</ul>
 </div>
 
-
 <body>
 	<main>
 		<header class="app__header container">
@@ -54,14 +53,14 @@
 				<h1 class="app__name">Chess Blunder Trainer App</h1>
 				<p class="app__description">Replay blunders from your own chess games to improve your chess skills!</p>
 				<div class="app__buttons app__buttons--desktop">
-					<a href="https://play.google.com/store/apps/details?id&#x3D;com.cbt.chess_blunder_trainer" class="app__button-play" target="_blank" title="Get on Google Play">
+					<a href="https://play.google.com/store/apps/details?id&#x3D;com.cbt.chess_blunder_trainer" onclick="trackLinkClick('Visit Play Store Desktop')" class="app__button-play" target="_blank" title="Get on Google Play">
 						<img src="assets/google-play-badge.png" alt="Get on Google Play">
 					</a>
 				</div>
 			</div>
 		</header>
 		<div class="app__buttons app__buttons--mobile container">
-			<a href="https://play.google.com/store/apps/details?id&#x3D;com.cbt.chess_blunder_trainer" class="app__button-play" target="_blank" title="Get on Google Play">
+			<a href="https://play.google.com/store/apps/details?id&#x3D;com.cbt.chess_blunder_trainer" onclick="trackLinkClick('Visit Play Store Mobile')" class="app__button-play" target="_blank" title="Get on Google Play">
 				<img src="assets/google-play-badge.png" alt="Get on Google Play">
 			</a>
 		</div>
@@ -96,12 +95,12 @@
 				</ol>
 			</div>
 			<div class="app__buttons app__buttons--desktop">
-				<a href="https://play.google.com/store/apps/details?id&#x3D;com.cbt.chess_blunder_trainer" class="app__button-play" target="_blank" title="Get on Google Play">
+				<a href="https://play.google.com/store/apps/details?id&#x3D;com.cbt.chess_blunder_trainer" onclick="trackLinkClick('Visit Play Store Desktop')" class="app__button-play" target="_blank" title="Get on Google Play">
 					<img src="assets/google-play-badge.png" alt="Get on Google Play">
 				</a>
 			</div>
 			<div class="app__buttons app__buttons--mobile container">
-				<a href="https://play.google.com/store/apps/details?id&#x3D;com.cbt.chess_blunder_trainer" class="app__button-play" target="_blank" title="Get on Google Play">
+				<a href="https://play.google.com/store/apps/details?id&#x3D;com.cbt.chess_blunder_trainer" onclick="trackLinkClick('Visit Play Store Mobile')" class="app__button-play" target="_blank" title="Get on Google Play">
 					<img src="assets/google-play-badge.png" alt="Get on Google Play">
 				</a>
 			</div>
@@ -130,12 +129,12 @@
 				<p>Please reach out via <a href="mailto:chessblundertrainer@gmail.com">chessblundertrainer@gmail.com</a> with any feedback or questions!</p>
 			</div>
 			<div class="app__buttons app__buttons--desktop">
-				<a href="https://play.google.com/store/apps/details?id&#x3D;com.cbt.chess_blunder_trainer" class="app__button-play" target="_blank" title="Get on Google Play">
+				<a href="https://play.google.com/store/apps/details?id&#x3D;com.cbt.chess_blunder_trainer" onclick="trackLinkClick('Visit Play Store Desktop')" class="app__button-play" target="_blank" title="Get on Google Play">
 					<img src="assets/google-play-badge.png" alt="Get on Google Play">
 				</a>
 			</div>
 			<div class="app__buttons app__buttons--mobile container">
-				<a href="https://play.google.com/store/apps/details?id&#x3D;com.cbt.chess_blunder_trainer" class="app__button-play" target="_blank" title="Get on Google Play">
+				<a href="https://play.google.com/store/apps/details?id&#x3D;com.cbt.chess_blunder_trainer" onclick="trackLinkClick('Visit Play Store Mobile')" class="app__button-play" target="_blank" title="Get on Google Play">
 					<img src="assets/google-play-badge.png" alt="Get on Google Play">
 				</a>
 			</div>
@@ -185,16 +184,27 @@
 		document.addEventListener('DOMContentLoaded', function () {
 			// Select all menu items
 			var menuItems = document.querySelectorAll('.menu__box .menu__item');
-		
+
 			// Add click event listener to each menu item
-			menuItems.forEach(function(item) {
-				item.addEventListener('click', function() {
+			menuItems.forEach(function (item) {
+				item.addEventListener('click', function () {
 					// Uncheck the menu toggle checkbox
 					document.getElementById('menu__toggle').checked = false;
 				});
 			});
 		});
-		</script>
+	</script>
+
+	<script>
+		function trackLinkClick(linkName) {
+			gtag('event', 'click', {
+				'event_category': 'Link Click',
+				'event_label': linkName,
+				'transport_type': 'beacon',
+				'event_callback': function () { document.location = "https://www.chessblundertrailer.com"; }
+			});
+		}
+	</script>
 
 </body>
 

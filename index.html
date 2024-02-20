@@ -66,7 +66,7 @@
 		</div>
 		<section id="screenshots" class="app__screenshots app__section">
 			<div class="container">
-				<h2 class="app__section-title">Screenshots of the App</h2>
+				<h2 class="app__section-title">Screenshots</h2>
 			</div>
 			<div class="app__screenshots-wrapper container-desktop">
 				<div class="app__screenshots-list">
@@ -79,11 +79,14 @@
 					<a href="content/image/chess_blunder_trainer_tool_import_your_games.jpg" class="lightbox">
 						<img src="content/image/chess_blunder_trainer_tool_import_your_games.jpg" class="app__screenshot" alt="Import offline games and online games from chess.com or Lichess" />
 					</a>
+					<a href="content/image/chess_blunder_trainer_import_blunders_chesscom.jpg" class="lightbox">
+						<img src="content/image/chess_blunder_trainer_import_blunders_chesscom.jpg" class="app__screenshot" alt="Import offline games and online games from chess.com or Lichess" />
+					</a>
 				</div>
 			</div>
 		</section>
 		<section id="how" class="app__fulldescription app__section container">
-			<h2 class="app__section-title">How the Chess Blunder Trainer App Works</h2>
+			<h2 class="app__section-title">How the App Works</h2>
 			<div class="app__fulldescription-content">
 				<ol>
 					<li><strong>Easily import</strong> your own chess games from various (online) sources such as chess.com or Lichess, or from your personal PGN files.</li>
@@ -125,7 +128,7 @@
 		<section id="about" class="app__fulldescription app__section container">
 			<h2 class="app__section-title">About the Software</h2>
 			<div class="app__fulldescription-content">
-				<p>The chess software developed as a side project by Thomas Koeppen. The tool is available as a free Android app in the Google Play Store.</p>
+				<p>The chess software developed as a personal project by Thomas Koeppen. The tool is available as a free Android app in the Google Play Store.</p>
 				<p>Please reach out via <a href="mailto:chessblundertrainer@gmail.com">chessblundertrainer@gmail.com</a> with any feedback or questions!</p>
 			</div>
 			<div class="app__buttons app__buttons--desktop">
@@ -137,6 +140,14 @@
 				<a href="https://play.google.com/store/apps/details?id&#x3D;com.cbt.chess_blunder_trainer" onclick="trackPlayStoreLinkClick('Visit Play Store Mobile')" class="app__button-play" target="_blank" title="Get on Google Play">
 					<img src="assets/google-play-badge.png" alt="Get on Google Play">
 				</a>
+			</div>
+		</section>
+		<section id="release-notes" class="app__fulldescription app__section container">
+			<h2 class="app__section-title">Release Notes</h2>
+			<div class="app__fulldescription-content">
+				<ul id="release-notes-list">
+					<!-- Release notes items will be dynamically inserted here -->
+				</ul>
 			</div>
 		</section>
 	</main>
@@ -194,7 +205,6 @@
 			});
 		});
 	</script>
-
 	<script>
 		function trackPlayStoreLinkClick(linkName) {
 			gtag('event', 'link click', {
@@ -203,6 +213,148 @@
 				'event_callback': function () { document.location = "https://www.chessblundertrainer.com";}
 			});
 		}
+	</script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const releaseNotes = [
+				{
+					'version': 'v1.3.0',
+					'notes': 'Redesign of import page including introduction of direct import functionality for chess.com and Lichess',
+				},
+				{
+					'version': 'v1.2.1',
+					'notes': 'Minor UI fixes',
+				},
+				{
+					'version': 'v1.2.0',
+					'notes': 'Inclusion of blunder examples from grandmaster games',
+				},
+				{
+					'version': 'v1.1.2',
+					'notes': 'Minor fixes',
+				},
+				{
+					'version': 'v1.1.1',
+					'notes': 'Minor UI fixes',
+				},
+				{
+					'version': 'v1.1.0',
+					'notes': 'Display of piece advantage',
+				},
+				{
+					'version': 'v1.0.4',
+					'notes': 'Fix of PGN parsing, introduction of customized error page',
+				},
+				{
+					'version': 'v1.0.3',
+					'notes': 'Code and UI improvements',
+				},
+				{
+					'version': 'v1.0.2',
+					'notes': 'Skipping of chess variants (such as antichess) during import ',
+				},
+				{
+					'version': 'v1.0.1',
+					'notes': 'Code and UI improvements',
+				},
+				{
+					'version': 'v1.0.0',
+					'notes': 'Display of time control mode',
+				},
+				{
+					'version': 'v0.7.0',
+					'notes': 'Improvement of "Import" page including introduction of "cancel import" button',
+				},
+				{
+					'version': 'v0.6.2',
+					'notes': 'Code update of settings page',
+				},
+				{
+					'version': 'v0.6.1',
+					'notes': 'Various UI improvements',
+				},
+				{
+					'version': 'v0.6.0',
+					'notes': 'Vastly improved "Select" page, with imports organized by date',
+				},
+				{
+					'version': 'v0.5.0',
+					'notes': 'Refinement of blunder assessment and introduction of blunder identification sensitivity option',
+				},
+				{
+					'version': 'v0.4.1',
+					'notes': 'Swiping between non-archived sets on "Improve" page',
+				},
+				{
+					'version': 'v0.4.0',
+					'notes': 'Major redesign of "select" page, including archiving functionality',
+				},
+				{
+					'version': 'v0.3.2',
+					'notes': 'Update of app logo; completion of settings page; various UI improvements',
+				},
+				{
+					'version': 'v0.3.1',
+					'notes': 'Bugfix in PGN import in case of included line variations',
+				},
+				{
+					'version': 'v0.3.0',
+					'notes': 'Major improvement of interaction with Stockfish chess engine to enable continous background analysis',
+				},
+				{
+					'version': 'v0.2.10',
+					'notes': 'Adjustment option for small screen sizes; display of Stockfish depth; various minor improvements',
+				},
+				{
+					'version': 'v0.2.9',
+					'notes': 'Display of additional information during import; support for latin1 encoding standard in PGN file import; introduction of "About" page in settings',
+				},
+				{
+					'version': 'v0.2.8',
+					'notes': 'Bugfix to avoid problems with startup after uninstall/update due to old data',
+				},
+				{
+					'version': 'v0.2.7',
+					'notes': 'Settings page',
+				},
+				{
+					'version': 'v0.2.6',
+					'notes': 'Improved font sizes and layout',
+				},
+				{
+					'version': 'v0.2.5',
+					'notes': 'Initial version published in Play Store for closed testing',
+				},
+				{
+					'version': 'v0.2.4',
+					'notes': 'Skipping of already imported games to avoid importing same games multiple times',
+				},
+				{
+					'version': 'v0.2.3',
+					'notes': 'Improved selection of played color',
+				},
+				{
+					'version': 'v0.2.2',
+					'notes': 'Improved import routine',
+				},
+				{
+					'version': 'v0.2.1',
+					'notes': 'Display of player names and game date; bugfix of icon button label; updated app logo',
+				},
+				{
+					'version': 'v0.2.0',
+					'notes': 'Initial version published in Play Store for internal testing',
+				},
+			];
+
+			const releaseNotesList = document.getElementById('release-notes-list');
+
+			releaseNotes.forEach(note => {
+				const listItem = document.createElement('li');
+				listItem.innerHTML = `<strong>${note.version}</strong>: ${note.notes}`;
+				releaseNotesList.appendChild(listItem);
+			});
+		});
 	</script>
 
 </body>

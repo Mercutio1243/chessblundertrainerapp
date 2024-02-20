@@ -193,7 +193,7 @@ html[dir=rtl] .app__logo-wrapper {
 @media (max-width: 768px) {
   .app__screenshots-list {
     padding: 32px;
-    width: 640px;
+    width: 870px;
   }
 }
 .app__screenshot {

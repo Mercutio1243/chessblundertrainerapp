@@ -327,3 +327,17 @@ html[dir=rtl] .app__logo-wrapper {
   padding: 0 30px;
   margin: auto;
 }
+
+#release-notes ul {
+  list-style: none;
+  padding: 0;
+}
+
+#release-notes li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+#release-notes li strong {
+  font-weight: bold;
+}

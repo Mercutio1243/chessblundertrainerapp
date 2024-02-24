@@ -213,10 +213,18 @@
 				'event_callback': function () { document.location = "https://www.chessblundertrainer.com";}
 			});
 		}
-	</script>
+		</script>
 	<script>
 		document.addEventListener('DOMContentLoaded', function () {
 			const releaseNotes = [
+				{
+					'version': 'v1.3.2',
+					'notes': 'Introduction of modes for setting game set structure: by play date, import date or as single set',
+				},
+				{
+					'version': 'v1.3.1',
+					'notes': 'Implementation of Lichess games import of one month; bugfix in case username is provided with deviating capitalization; UI improvements',
+				},
 				{
 					'version': 'v1.3.0',
 					'notes': 'Redesign of import page including introduction of direct import functionality for chess.com and Lichess',
@@ -299,11 +307,11 @@
 				},
 				{
 					'version': 'v0.3.0',
-					'notes': 'Major improvement of interaction with chess engine to enable continous background analysis',
+					'notes': 'Major improvement of interaction with Stockfish chess engine to enable continous background analysis',
 				},
 				{
 					'version': 'v0.2.10',
-					'notes': 'Adjustment option for small screen sizes; display of chess engine analysis depth; various minor improvements',
+					'notes': 'Adjustment option for small screen sizes; display of Stockfish analysis depth; various minor improvements',
 				},
 				{
 					'version': 'v0.2.9',

@@ -126,11 +126,12 @@
 			</div>
 		</section>
 		<section id="about" class="app__fulldescription app__section container">
-			<h2 class="app__section-title">About the Software</h2>
+			<h2 class="app__section-title">About</h2>
 			<div class="app__fulldescription-content">
-				<p>The chess software developed as a personal project by Thomas Koeppen. The tool is available as a free Android app in the Google Play Store.</p>
-				<p>Please reach out via <a href="mailto:chessblundertrainer@gmail.com">chessblundertrainer@gmail.com</a> with any feedback or questions!</p>
+				<p>This chess software was developed as a personal project by Thomas Koeppen. The tool is available as a free Android app in the Google Play Store. Please reach out via <a href="mailto:chessblundertrainer@gmail.com">chessblundertrainer@gmail.com</a> with any feedback or questions!</p>
+				<p>Special thanks to <a href="https://sandeducator.dev/">Alex Baker</a>, who has published a chess logic package <a href="https://pub.dev/packages/bishop">bishop</a> and a chessboard visualization package <a href="https://pub.dev/packages/squares">squares</a> that are used by the app.</p>
 			</div>
+			
 			<div class="app__buttons app__buttons--desktop">
 				<a href="https://play.google.com/store/apps/details?id&#x3D;com.cbt.chess_blunder_trainer" onclick="trackPlayStoreLinkClick('Visit Play Store Desktop')" class="app__button-play" target="_blank" title="Get on Google Play">
 					<img src="assets/google-play-badge.png" alt="Get on Google Play">
@@ -210,16 +211,24 @@
 			gtag('event', 'link click', {
 				'event_label': linkName,
 				'transport_type': 'beacon',
-				'event_callback': function () { document.location = "https://www.chessblundertrainer.com";}
+				'event_callback': function () { document.location = "https://www.chessblundertrainer.com"; }
 			});
 		}
-		</script>
+	</script>
 	<script>
 		document.addEventListener('DOMContentLoaded', function () {
 			const releaseNotes = [
 				{
+					'version': 'v1.3.4',
+					'notes': 'Workaround for bug in third party package leading to crashes',
+				},
+				{
+					'version': 'v1.3.3',
+					'notes': 'Bugfixes and UI improvements',
+				},
+				{
 					'version': 'v1.3.2',
-					'notes': 'Introduction of different modes for segmentation of imported games: by play date, import date or as single set',
+					'notes': 'Introduction of different modes for segmentation of imported games on "Select" page: by play date, import date or as single set',
 				},
 				{
 					'version': 'v1.3.1',
@@ -239,7 +248,7 @@
 				},
 				{
 					'version': 'v1.1.2',
-					'notes': 'Minor fixes',
+					'notes': 'Minor bug fixes',
 				},
 				{
 					'version': 'v1.1.1',
@@ -295,7 +304,7 @@
 				},
 				{
 					'version': 'v0.4.0',
-					'notes': 'Major redesign of "select" page, including archiving functionality',
+					'notes': 'Major redesign of "Select" page, including archiving functionality',
 				},
 				{
 					'version': 'v0.3.2',
@@ -331,7 +340,7 @@
 				},
 				{
 					'version': 'v0.2.5',
-					'notes': 'Initial version published in Play Store for closed testing',
+					'notes': 'Initial version published to Play Store for closed testing',
 				},
 				{
 					'version': 'v0.2.4',
@@ -351,7 +360,7 @@
 				},
 				{
 					'version': 'v0.2.0',
-					'notes': 'Initial version published in Play Store for internal testing',
+					'notes': 'Initial version published to Play Store for internal testing',
 				},
 			];
 

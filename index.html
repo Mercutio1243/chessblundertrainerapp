@@ -160,7 +160,7 @@
 				<p class="footer__love">
 					<script>document.write('&copy;' + (new Date()).getFullYear());</script><noscript>&copy;2024</noscript> All rights reserved
 					&mdash; Template by <a title="Template" href="https://www.sandoche.com" target="_blank">Sandoche</a>
-					&mdash; Powered by <a title="Editor" href="https://t3mpl.n4no.com/" target="_blank" title="T3MPL Editor">T3MPL</a>
+					&mdash; Powered by <a title="Editor" href="https://t3mpl.n4no.com/" target="_blank">T3MPL</a>
 				</p>
 			</div>
 		</div>
@@ -188,10 +188,8 @@
 	</script>
 	<script>
 		document.addEventListener('DOMContentLoaded', function () {
-			// Select all menu items
-			var menuItems = document.querySelectorAll('.menu__box .menu__item');
 
-			// Add click event listener to each menu item
+			var menuItems = document.querySelectorAll('.menu__box .menu__item');
 			menuItems.forEach(function (item) {
 				item.addEventListener('click', function () {
 					// Uncheck the menu toggle checkbox
@@ -202,7 +200,7 @@
 	</script>
 	<script>
 		function trackPlayStoreLinkClick(linkName) {
-			gtag('event', 'link click', {
+			gtag('event', 'Android Store link click', {
 				'event_label': linkName,
 				'transport_type': 'beacon',
 				'event_callback': function () { document.location = "https://www.chessblundertrainer.com"; }

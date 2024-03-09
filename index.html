@@ -4,8 +4,8 @@
 <head>
 	<!-- Google tag (gtag.js) -->
 	<script
-		async src="https://www.googletagmanager.com/gtag/js?id=G-H2MNTZRY5K">
-	</script>
+			async src="https://www.googletagmanager.com/gtag/js?id=G-H2MNTZRY5K">
+			</script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
@@ -131,7 +131,7 @@
 			<h2 class="app__section-title">About</h2>
 			<div class="app__fulldescription-content">
 				<p>This chess software was developed as a personal project by Thomas Koeppen. The tool is available as a free Android app in the Google Play Store. Please reach out via <a title="Email address of app developer" href="mailto:chessblundertrainer@gmail.com">chessblundertrainer@gmail.com</a> with any feedback or questions!</p>
-				<p>Special thanks to <a title="Developer of third party packages use in the chess app" href="https://sandeducator.dev/">Alex Baker</a>, who has published the chess logic package <a title="Flutter bishop package" href="https://pub.dev/packages/bishop" >bishop</a> and the chessboard visualization package <a title="Flutter squares package" href="https://pub.dev/packages/squares">squares</a> that are used by the app.</p>
+				<p>Special thanks to <a title="Developer of third party packages use in the chess app" href="https://sandeducator.dev/">Alex Baker</a>, who has published the chess logic package <a title="Flutter bishop package" href="https://pub.dev/packages/bishop">bishop</a> and the chessboard visualization package <a title="Flutter squares package" href="https://pub.dev/packages/squares">squares</a> that are used by the app.</p>
 			</div>
 
 			<div class="app__buttons app__buttons--desktop">
@@ -193,7 +193,7 @@
 			menuItems.forEach(function (item) {
 				item.addEventListener('click', function () {
 					// Uncheck the menu toggle checkbox
-					document.getElementById('menu__toggle').checked = false; 
+					document.getElementById('menu__toggle').checked = false;
 				});
 			});
 		});
@@ -211,6 +211,14 @@
 		document.addEventListener('DOMContentLoaded', function () {
 			const releaseNotes = [
 				{
+					'version': 'v1.4.0',
+					'notes': 'Introduction of separate blunder sensitivity options per time control mode',
+				},
+				{
+					'version': 'v1.3.5',
+					'notes': 'Minor fixes and improvements',
+				},
+				{
 					'version': 'v1.3.4',
 					'notes': 'Workaround for bug in third party package leading to crashes',
 				},
@@ -224,7 +232,7 @@
 				},
 				{
 					'version': 'v1.3.1',
-					'notes': 'Implementation of Lichess games import of one month; bugfix in case username is provided with deviating capitalization; UI improvements',
+					'notes': 'Introduction of import functionality of one specific month of Lichess games; bugfix in case username is provided with deviating capitalization; UI improvements',
 				},
 				{
 					'version': 'v1.3.0',

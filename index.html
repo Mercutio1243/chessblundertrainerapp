@@ -131,7 +131,7 @@
 			<h2 class="app__section-title">About</h2>
 			<div class="app__fulldescription-content">
 				<p>This chess software was developed as a personal project by Thomas Koeppen. The tool is available as a free Android app in the Google Play Store. Please reach out via <a title="Email address of app developer" href="mailto:chessblundertrainer@gmail.com">chessblundertrainer@gmail.com</a> with any feedback or questions!</p>
-				<p>Special thanks to <a title="Developer of third party packages use in the chess app" href="https://sandeducator.dev/">Alex Baker</a>, who has published the chess logic package <a title="Flutter bishop package" href="https://pub.dev/packages/bishop">bishop</a> and the chessboard visualization package <a title="Flutter squares package" href="https://pub.dev/packages/squares">squares</a> that are used by the app.</p>
+				<p>Special thanks to <a title="Developer of external flutter packages used in this chess app" href="https://sandeducator.dev/">Alex Baker</a>, who published the chess logic package <a title="Flutter bishop package" href="https://pub.dev/packages/bishop">bishop</a> and the chessboard visualization package <a title="Flutter squares package" href="https://pub.dev/packages/squares">squares</a> for flutter. Without those, this app would not have been possible.</p>
 			</div>
 
 			<div class="app__buttons app__buttons--desktop">
@@ -209,7 +209,23 @@
 	</script>
 	<script>
 		document.addEventListener('DOMContentLoaded', function () {
-			const releaseNotes = [
+			const globalReleaseNotes = [
+				{
+					'version': 'v1.6.0',
+					'notes': 'Introduction of weekly training streak feature',
+				},
+				{
+					'version': 'v1.5.5',
+					'notes': 'Improvement of chess engine stability',
+				},
+				{
+					'version': 'v1.5.4',
+					'notes': 'Introduction of options for when blunder move arrow should be displayed',
+				},
+				{
+					'version': 'v1.5.3',
+					'notes': 'Improvement of feedback system',
+				},
 				{
 					'version': 'v1.5.2',
 					'notes': 'Improvement of chess engine stability',
@@ -382,7 +398,7 @@
 
 			const releaseNotesList = document.getElementById('release-notes-list');
 
-			releaseNotes.forEach(note => {
+			globalReleaseNotes.forEach(note => {
 				const listItem = document.createElement('li');
 				listItem.innerHTML = `<strong>${note.version}</strong>: ${note.notes}`;
 				releaseNotesList.appendChild(listItem);

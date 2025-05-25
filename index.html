@@ -27,6 +27,14 @@
 	<link rel="stylesheet" href="assets/menu.css" />
 	<link rel="stylesheet" href="assets/tobi.css" />
 	<link rel="canonical" href="https://www.chessblundertrainer.com/" />
+	<style>
+	.app__badge {
+		height: 60px;      /* Set desired uniform height */
+		width: auto;       /* Maintain original aspect ratio */
+		display: inline-block;
+		vertical-align: middle;
+	}
+</style>
 </head>
 
 <div class="hamburger-menu">
@@ -51,23 +59,33 @@
 
 <body>
 	<main>
-		<header id="header" class="app__header container">
-			<div class="app__logo-wrapper"> <img class="app__logo" src="content/image/logo_app.png" alt="Chess Blunder Trainer App"></div>
-			<div class="app__infos">
-				<h1 class="app__name">Chess Blunder Trainer App</h1>
-				<p class="app__description">Replay blunders from your own chess games to improve your chess skills!</p>
-				<div class="app__buttons app__buttons--desktop">
-					<a href="https://play.google.com/store/apps/details?id&#x3D;com.cbt.chess_blunder_trainer" onclick="trackPlayStoreLinkClick('Visit Play Store Desktop')" class="app__button-play" target="_blank" title="Get on Google Play">
-						<img src="assets/google-play-badge.png" alt="Get on Google Play">
-					</a>
-				</div>
-			</div>
-		</header>
-		<div class="app__buttons app__buttons--mobile container">
-			<a href="https://play.google.com/store/apps/details?id&#x3D;com.cbt.chess_blunder_trainer" onclick="trackPlayStoreLinkClick('Visit Play Store Mobile')" class="app__button-play" target="_blank" title="Get on Google Play">
-				<img src="assets/google-play-badge.png" alt="Get on Google Play">
+<header id="header" class="app__header container">
+	<div class="app__logo-wrapper">
+		<img class="app__logo" src="content/image/logo_app.png" alt="Chess Blunder Trainer App">
+	</div>
+	<div class="app__infos">
+		<h1 class="app__name">Chess Blunder Trainer App</h1>
+		<p class="app__description">Replay blunders from your own chess games to improve your chess skills!</p>
+		<div class="app__buttons app__buttons--desktop">
+			<a href="https://play.google.com/store/apps/details?id=com.cbt.chess_blunder_trainer" onclick="trackPlayStoreLinkClick('Visit Play Store Desktop')" class="app__button-play" target="_blank" title="Get on Google Play">
+				<img class="app__badge" src="assets/google-play-badge.png" alt="Get on Google Play">
+			</a>
+			<a href="https://play.google.com/store/apps/details?id=com.cbt.chess_blunder_trainer" onclick="trackPlayStoreLinkClick('Visit Play Store Windows')" class="app__button-play" target="_blank" title="Get on Google Play for Windows">
+				<img class="app__badge" src="assets/Windows_badge.png" alt="Get on Google Play for Windows">
 			</a>
 		</div>
+	</div>
+</header>
+
+<div class="app__buttons app__buttons--mobile container">
+	<a href="https://play.google.com/store/apps/details?id=com.cbt.chess_blunder_trainer" onclick="trackPlayStoreLinkClick('Visit Play Store Mobile')" class="app__button-play" target="_blank" title="Get on Google Play">
+		<img class="app__badge" src="assets/google-play-badge.png" alt="Get on Google Play">
+	</a>
+	<a href="https://play.google.com/store/apps/details?id=com.cbt.chess_blunder_trainer" onclick="trackPlayStoreLinkClick('Visit Play Store Windows Mobile')" class="app__button-play" target="_blank" title="Get on Google Play for Windows">
+		<img class="app__badge" src="assets/Windows_badge.png" alt="Get on Google Play for Windows">
+	</a>
+</div>
+
 		<section id="video" class="app__video app__section">
 	<div class="container">
 		<h2 class="app__section-title">Video Introduction</h2>
@@ -128,21 +146,37 @@
 					<li><strong>Easily import</strong> your <strong>own chess games</strong> from various (online) sources such as chess.com or Lichess, or from your personal PGN files.</li>
 					<li><strong>Replay</strong> your blunders as <strong>personalized puzzles</strong> from your games and train to spot better moves.</li>
 					<li><strong>Let the app support you</strong> in assessing your moves and get recommendations from the chess engine.</li>
-					<li><strong>Learn</strong> from your <strong>blunders</strong> and improve your chess skills!</li>
-					<li><strong>Improve</strong> your chess game <strong>completely for free</strong> and without ads.</li>
+					<li><strong>Learn</strong> from your <strong>blunders</strong> and improve your chess skills completely for free</strong> and without ads!</li>
 					<p> </p>
 				</ol>
-			</div>
-			<div class="app__buttons app__buttons--desktop">
-				<a href="https://play.google.com/store/apps/details?id&#x3D;com.cbt.chess_blunder_trainer" onclick="trackPlayStoreLinkClick('Visit Play Store Desktop')" class="app__button-play" target="_blank" title="Get on Google Play">
-					<img src="assets/google-play-badge.png" alt="Get on Google Play for Android smartphones and for Windows">
-				</a>
-			</div>
-			<div class="app__buttons app__buttons--mobile container">
-				<a href="https://play.google.com/store/apps/details?id&#x3D;com.cbt.chess_blunder_trainer" onclick="trackPlayStoreLinkClick('Visit Play Store Mobile')" class="app__button-play" target="_blank" title="Get on Google Play">
-					<img src="assets/google-play-badge.png" alt="Get on Google Play for Android smartphones and for Windows">
-				</a>
-			</div>
+<style>
+	.app__badge {
+		height: 60px;
+		width: auto;
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 8px; /* Optional spacing between images */
+	}
+</style>
+
+<div class="app__buttons app__buttons--desktop">
+	<a href="https://play.google.com/store/apps/details?id=com.cbt.chess_blunder_trainer" onclick="trackPlayStoreLinkClick('Visit Play Store Desktop')" class="app__button-play" target="_blank" title="Get on Google Play">
+		<img class="app__badge" src="assets/google-play-badge.png" alt="Get on Google Play for Android smartphones and for Windows">
+	</a>
+	<a href="https://play.google.com/store/apps/details?id=com.cbt.chess_blunder_trainer" onclick="trackPlayStoreLinkClick('Visit Play Store Windows Desktop')" class="app__button-play" target="_blank" title="Get on Google Play for Windows">
+		<img class="app__badge" src="assets/Windows_badge.png" alt="Get on Google Play for Windows">
+	</a>
+</div>
+
+<div class="app__buttons app__buttons--mobile container">
+	<a href="https://play.google.com/store/apps/details?id=com.cbt.chess_blunder_trainer" onclick="trackPlayStoreLinkClick('Visit Play Store Mobile')" class="app__button-play" target="_blank" title="Get on Google Play">
+		<img class="app__badge" src="assets/google-play-badge.png" alt="Get on Google Play for Android smartphones and for Windows">
+	</a>
+	<a href="https://play.google.com/store/apps/details?id=com.cbt.chess_blunder_trainer" onclick="trackPlayStoreLinkClick('Visit Play Store Windows Mobile')" class="app__button-play" target="_blank" title="Get on Google Play for Windows">
+		<img class="app__badge" src="assets/Windows_badge.png" alt="Get on Google Play for Windows">
+	</a>
+</div>
+
 		</section>
 		<section id="avoid" class="app__fulldescription app__section container">
 			<h2 class="app__section-title">Strategies to Avoid Blunders</h2>
@@ -163,16 +197,34 @@
 				<p>Special thanks to <a title="Developer of external flutter packages used in this chess app" href="https://sandeducator.dev/">Alex Baker</a>, who has published the chess logic package <a title="Flutter bishop package" href="https://pub.dev/packages/bishop">bishop</a> and the chessboard package <a title="Flutter squares package" href="https://pub.dev/packages/squares">squares</a> for flutter. Without those, this app would not have been possible.</p>
 			</div>
 
-			<div class="app__buttons app__buttons--desktop">
-				<a href="https://play.google.com/store/apps/details?id&#x3D;com.cbt.chess_blunder_trainer" onclick="trackPlayStoreLinkClick('Visit Play Store Desktop')" class="app__button-play" target="_blank" title="Get on Google Play">
-					<img src="assets/google-play-badge.png" alt="Get on Google Play">
-				</a>
-			</div>
-			<div class="app__buttons app__buttons--mobile container">
-				<a href="https://play.google.com/store/apps/details?id&#x3D;com.cbt.chess_blunder_trainer" onclick="trackPlayStoreLinkClick('Visit Play Store Mobile')" class="app__button-play" target="_blank" title="Get on Google Play">
-					<img src="assets/google-play-badge.png" alt="Get on Google Play">
-				</a>
-			</div>
+<style>
+	.app__badge {
+		height: 60px;
+		width: auto;
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 8px; /* Optional spacing between images */
+	}
+</style>
+
+<div class="app__buttons app__buttons--desktop">
+	<a href="https://play.google.com/store/apps/details?id=com.cbt.chess_blunder_trainer" onclick="trackPlayStoreLinkClick('Visit Play Store Desktop')" class="app__button-play" target="_blank" title="Get on Google Play">
+		<img class="app__badge" src="assets/google-play-badge.png" alt="Get on Google Play for Android smartphones and for Windows">
+	</a>
+	<a href="https://play.google.com/store/apps/details?id=com.cbt.chess_blunder_trainer" onclick="trackPlayStoreLinkClick('Visit Play Store Windows Desktop')" class="app__button-play" target="_blank" title="Get on Google Play for Windows">
+		<img class="app__badge" src="assets/Windows_badge.png" alt="Get on Google Play for Windows">
+	</a>
+</div>
+
+<div class="app__buttons app__buttons--mobile container">
+	<a href="https://play.google.com/store/apps/details?id=com.cbt.chess_blunder_trainer" onclick="trackPlayStoreLinkClick('Visit Play Store Mobile')" class="app__button-play" target="_blank" title="Get on Google Play">
+		<img class="app__badge" src="assets/google-play-badge.png" alt="Get on Google Play for Android smartphones and for Windows">
+	</a>
+	<a href="https://play.google.com/store/apps/details?id=com.cbt.chess_blunder_trainer" onclick="trackPlayStoreLinkClick('Visit Play Store Windows Mobile')" class="app__button-play" target="_blank" title="Get on Google Play for Windows">
+		<img class="app__badge" src="assets/Windows_badge.png" alt="Get on Google Play for Windows">
+	</a>
+</div>
+
 		</section>
 		<section id="release-notes" class="app__fulldescription app__section container">
 			<h2 class="app__section-title">Release Notes</h2>

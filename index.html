@@ -291,7 +291,55 @@
 	<script>
 		document.addEventListener('DOMContentLoaded', function () {
 			const globalReleaseNotes = [
-				  {
+			{
+    'version': 'v2.5.0',
+    'notes': 'Complete redesign of import status information',
+  },
+  {
+    'version': 'v2.4.0',
+    'notes': 'Introduction of grey arrow to indicate played moves in actual game',
+  },
+  {
+    'version': 'v2.3.0',
+    'notes': 'Addition of button to jump to external Lichess aalysis for current board position',
+  },
+  {
+    'version': 'v2.2.0',
+    'notes': 'Various UI improvements including additional tooltips and snackbars; press blunder icon long to change blunder move arrow default behavior; update of chess engine to meet Android requirements',
+  },
+  {
+    'version': 'v2.1.0',
+    'notes': 'Addition of introduction screen for new users',
+  },
+  {
+    'version': 'v2.0.0',
+    'notes': 'Revamp and extensive improvement on improve page; improved blunder identification',
+  },
+  {
+    'version': 'v1.11.1',
+    'notes': 'Replacement of grey arrow by marker to indicate opponent\'s move before blunder',
+  },
+  {
+    'version': 'v1.11.0',
+    'notes': 'Introduction of grey arrow to indicate opponent\'s move before blunder',
+  },
+  {
+    'version': 'v1.10.2',
+    'notes': 'Addition of further grandmaster games for users to test app; improvement of blunder assessment',
+  },
+  {
+    'version': 'v1.10.1',
+    'notes': 'Further maintenance and backend refactoring',
+  },
+  {
+    'version': 'v1.10.0',
+    'notes': 'Maintenance and backend refactoring',
+  },
+  {
+    'version': 'v1.9.4',
+    'notes': 'Minor fixes and improvements',
+  },
+  {
     'version': 'v1.9.3',
     'notes': 'Minor fixes and improvements',
   },
@@ -303,230 +351,230 @@
     'version': 'v1.9.1',
     'notes': 'Improvement of feedback dialog',
   },
-				{
-					'version': 'v1.9.0',
-					'notes': 'Improvement of feedback requests',
-				},
-				{
-					'version': 'v1.8.3',
-					'notes': 'Minor fixes and improvements',
-				},
-				{
-					'version': 'v1.8.2',
-					'notes': 'Minor fixes and improvements',
-				},
-				{
-					'version': 'v1.8.1',
-					'notes': 'Introduction of first finished import dialog',
-				},
-				{
-					'version': 'v1.8.0',
-					'notes': 'Option for non-intrusive weekly notification w/o sound or vibration',
-				},
-				{
-					'version': 'v1.7.1',
-					'notes': 'Improvement of responsive design',
-				},
-				{
-					'version': 'v1.7.0',
-					'notes': 'Introduction of How-To page; introduction of usage statistics page',
-				},
-				{
-					'version': 'v1.6.3',
-					'notes': 'Minor fixes and improvements',
-				},
-				{
-					'version': 'v1.6.2',
-					'notes': 'Various housekeeping',
-				},
-				{
-					'version': 'v1.6.1',
-					'notes': 'Update of chess engine',
-				},
-				{
-					'version': 'v1.6.0',
-					'notes': 'Introduction of weekly training streak feature',
-				},
-				{
-					'version': 'v1.5.5',
-					'notes': 'Improvement of chess engine stability',
-				},
-				{
-					'version': 'v1.5.4',
-					'notes': 'Introduction of options for when blunder move arrow should be displayed',
-				},
-				{
-					'version': 'v1.5.3',
-					'notes': 'Improvement of feedback system',
-				},
-				{
-					'version': 'v1.5.2',
-					'notes': 'Improvement of chess engine stability',
-				},
-				{
-					'version': 'v1.5.1',
-					'notes': 'Introduction of direct import of PGN data from clipboard; minor fixes and improvements',
-				},
-				{
-					'version': 'v1.5.0',
-					'notes': 'Introduction of move assessment icons on "Improve" page',
-				},
-				{
-					'version': 'v1.4.1',
-					'notes': 'Minor fixes and improvements',
-				},
-				{
-					'version': 'v1.4.0',
-					'notes': 'Introduction of separate blunder sensitivity options per time control mode',
-				},
-				{
-					'version': 'v1.3.5',
-					'notes': 'Minor fixes and improvements',
-				},
-				{
-					'version': 'v1.3.4',
-					'notes': 'Workaround for bug in third party package leading to crashes',
-				},
-				{
-					'version': 'v1.3.3',
-					'notes': 'Bugfixes and UI improvements',
-				},
-				{
-					'version': 'v1.3.2',
-					'notes': 'Introduction of different modes for segmentation of imported games on "Select" page: by play date, import date or as single set',
-				},
-				{
-					'version': 'v1.3.1',
-					'notes': 'Introduction of import functionality of one specific month of Lichess games; bugfix in case username is provided with deviating capitalization; UI improvements',
-				},
-				{
-					'version': 'v1.3.0',
-					'notes': 'Redesign of import page including introduction of direct import functionality for chess.com and Lichess',
-				},
-				{
-					'version': 'v1.2.1',
-					'notes': 'Minor UI fixes',
-				},
-				{
-					'version': 'v1.2.0',
-					'notes': 'Inclusion of blunder examples from grandmaster games',
-				},
-				{
-					'version': 'v1.1.2',
-					'notes': 'Minor bug fixes',
-				},
-				{
-					'version': 'v1.1.1',
-					'notes': 'Minor UI fixes',
-				},
-				{
-					'version': 'v1.1.0',
-					'notes': 'Display of piece advantage',
-				},
-				{
-					'version': 'v1.0.4',
-					'notes': 'Fix of PGN parsing, introduction of customized error page',
-				},
-				{
-					'version': 'v1.0.3',
-					'notes': 'Code and UI improvements',
-				},
-				{
-					'version': 'v1.0.2',
-					'notes': 'Skipping of chess variants (such as antichess) during import ',
-				},
-				{
-					'version': 'v1.0.1',
-					'notes': 'Code and UI improvements',
-				},
-				{
-					'version': 'v1.0.0',
-					'notes': 'Display of time control mode',
-				},
-				{
-					'version': 'v0.7.0',
-					'notes': 'Improvement of "Import" page including introduction of "cancel import" button',
-				},
-				{
-					'version': 'v0.6.2',
-					'notes': 'Code update of settings page',
-				},
-				{
-					'version': 'v0.6.1',
-					'notes': 'Various UI improvements',
-				},
-				{
-					'version': 'v0.6.0',
-					'notes': 'Vastly improved "Select" page, with imports organized by date',
-				},
-				{
-					'version': 'v0.5.0',
-					'notes': 'Refinement of blunder assessment and introduction of blunder identification sensitivity option',
-				},
-				{
-					'version': 'v0.4.1',
-					'notes': 'Swiping between non-archived sets on "Improve" page',
-				},
-				{
-					'version': 'v0.4.0',
-					'notes': 'Major redesign of "Select" page, including archiving functionality',
-				},
-				{
-					'version': 'v0.3.2',
-					'notes': 'Update of app logo; completion of settings page; various UI improvements',
-				},
-				{
-					'version': 'v0.3.1',
-					'notes': 'Bugfix in PGN import in case of included line variations',
-				},
-				{
-					'version': 'v0.3.0',
-					'notes': 'Major improvement of interaction with Stockfish chess engine to enable continous background analysis',
-				},
-				{
-					'version': 'v0.2.10',
-					'notes': 'Adjustment option for small screen sizes; display of Stockfish analysis depth; various minor improvements',
-				},
-				{
-					'version': 'v0.2.9',
-					'notes': 'Display of additional information during import; support for latin1 encoding standard in PGN file import; introduction of "About" page in settings',
-				},
-				{
-					'version': 'v0.2.8',
-					'notes': 'Bugfix to avoid problems with startup after uninstall/update due to old data',
-				},
-				{
-					'version': 'v0.2.7',
-					'notes': 'Settings page',
-				},
-				{
-					'version': 'v0.2.6',
-					'notes': 'Improved font sizes and layout',
-				},
-				{
-					'version': 'v0.2.5',
-					'notes': 'Initial version published to Play Store for closed testing',
-				},
-				{
-					'version': 'v0.2.4',
-					'notes': 'Skipping of already imported games to avoid importing same games multiple times',
-				},
-				{
-					'version': 'v0.2.3',
-					'notes': 'Improved selection of played color',
-				},
-				{
-					'version': 'v0.2.2',
-					'notes': 'Improved import routine',
-				},
-				{
-					'version': 'v0.2.1',
-					'notes': 'Display of player names and game date; bugfix of icon button label; update of app logo',
-				},
-				{
-					'version': 'v0.2.0',
-					'notes': 'Initial version published to Play Store for internal testing',
-				},
+  {
+    'version': 'v1.9.0',
+    'notes': 'Improvement of feedback requests',
+  },
+  {
+    'version': 'v1.8.3',
+    'notes': 'Minor fixes and improvements',
+  },
+  {
+    'version': 'v1.8.2',
+    'notes': 'Minor fixes and improvements',
+  },
+  {
+    'version': 'v1.8.1',
+    'notes': 'Introduction of first finished import dialog',
+  },
+  {
+    'version': 'v1.8.0',
+    'notes': 'Option for non-intrusive weekly notification w/o sound or vibration',
+  },
+  {
+    'version': 'v1.7.1',
+    'notes': 'Improvement of responsive design',
+  },
+  {
+    'version': 'v1.7.0',
+    'notes': 'Introduction of How-To page; introduction of usage statistics page',
+  },
+  {
+    'version': 'v1.6.3',
+    'notes': 'Minor fixes and improvements',
+  },
+  {
+    'version': 'v1.6.2',
+    'notes': 'Various housekeeping',
+  },
+  {
+    'version': 'v1.6.1',
+    'notes': 'Update of chess engine',
+  },
+  {
+    'version': 'v1.6.0',
+    'notes': 'Introduction of weekly training streak feature',
+  },
+  {
+    'version': 'v1.5.5',
+    'notes': 'Improvement of chess engine stability',
+  },
+  {
+    'version': 'v1.5.4',
+    'notes': 'Introduction of options for when blunder move arrow should be displayed',
+  },
+  {
+    'version': 'v1.5.3',
+    'notes': 'Improvement of feedback system',
+  },
+  {
+    'version': 'v1.5.2',
+    'notes': 'Improvement of chess engine stability',
+  },
+  {
+    'version': 'v1.5.1',
+    'notes': 'Introduction of direct import of PGN data from clipboard; minor fixes and improvements',
+  },
+  {
+    'version': 'v1.5.0',
+    'notes': 'Introduction of move assessment icons on "Improve" page',
+  },
+  {
+    'version': 'v1.4.1',
+    'notes': 'Minor fixes and improvements',
+  },
+  {
+    'version': 'v1.4.0',
+    'notes': 'Introduction of separate blunder sensitivity options per time control mode',
+  },
+  {
+    'version': 'v1.3.5',
+    'notes': 'Minor fixes and improvements',
+  },
+  {
+    'version': 'v1.3.4',
+    'notes': 'Workaround for bug in third party package leading to crashes',
+  },
+  {
+    'version': 'v1.3.3',
+    'notes': 'Bugfixes and UI improvements',
+  },
+  {
+    'version': 'v1.3.2',
+    'notes': 'Introduction of different modes for segmentation of imported games on "Select" page: by play date, import date or as single set',
+  },
+  {
+    'version': 'v1.3.1',
+    'notes': 'Introduction of import functionality of one specific month of Lichess games; bugfix in case username is provided with deviating capitalization; UI improvements',
+  },
+  {
+    'version': 'v1.3.0',
+    'notes': 'Redesign of import page including introduction of direct import functionality for chess.com and Lichess',
+  },
+  {
+    'version': 'v1.2.1',
+    'notes': 'Minor UI fixes',
+  },
+  {
+    'version': 'v1.2.0',
+    'notes': 'Inclusion of blunder examples from grandmaster games',
+  },
+  {
+    'version': 'v1.1.2',
+    'notes': 'Minor bug fixes',
+  },
+  {
+    'version': 'v1.1.1',
+    'notes': 'Minor UI fixes',
+  },
+  {
+    'version': 'v1.1.0',
+    'notes': 'Display of piece advantage',
+  },
+  {
+    'version': 'v1.0.4',
+    'notes': 'Fix of PGN parsing, introduction of customized error page',
+  },
+  {
+    'version': 'v1.0.3',
+    'notes': 'Code and UI improvements',
+  },
+  {
+    'version': 'v1.0.2',
+    'notes': 'Skipping of chess variants (such as antichess) during import ',
+  },
+  {
+    'version': 'v1.0.1',
+    'notes': 'Code and UI improvements',
+  },
+  {
+    'version': 'v1.0.0',
+    'notes': 'Display of time control mode',
+  },
+  {
+    'version': 'v0.7.0',
+    'notes': 'Improvement of "Import" page including introduction of "cancel import" button',
+  },
+  {
+    'version': 'v0.6.2',
+    'notes': 'Code update of settings page',
+  },
+  {
+    'version': 'v0.6.1',
+    'notes': 'Various UI improvements',
+  },
+  {
+    'version': 'v0.6.0',
+    'notes': 'Vastly improved "Select" page, with imports organized by date',
+  },
+  {
+    'version': 'v0.5.0',
+    'notes': 'Refinement of blunder assessment and introduction of blunder identification sensitivity option',
+  },
+  {
+    'version': 'v0.4.1',
+    'notes': 'Swiping between non-archived sets on "Improve" page',
+  },
+  {
+    'version': 'v0.4.0',
+    'notes': 'Major redesign of "Select" page, including archiving functionality',
+  },
+  {
+    'version': 'v0.3.2',
+    'notes': 'Update of app logo; completion of settings page; various UI improvements',
+  },
+  {
+    'version': 'v0.3.1',
+    'notes': 'Bugfix in PGN import in case of included line variations',
+  },
+  {
+    'version': 'v0.3.0',
+    'notes': 'Major improvement of interaction with Stockfish chess engine to enable continous background analysis',
+  },
+  {
+    'version': 'v0.2.10',
+    'notes': 'Adjustment option for small screen sizes; display of Stockfish analysis depth; various minor improvements',
+  },
+  {
+    'version': 'v0.2.9',
+    'notes': 'Display of additional information during import; support for latin1 encoding standard in PGN file import; introduction of "About" page in settings',
+  },
+  {
+    'version': 'v0.2.8',
+    'notes': 'Bugfix to avoid problems with startup after uninstall/update due to old data',
+  },
+  {
+    'version': 'v0.2.7',
+    'notes': 'Settings page',
+  },
+  {
+    'version': 'v0.2.6',
+    'notes': 'Improved font sizes and layout',
+  },
+  {
+    'version': 'v0.2.5',
+    'notes': 'Initial version published to Play Store for closed testing',
+  },
+  {
+    'version': 'v0.2.4',
+    'notes': 'Skipping of already imported games to avoid importing same games multiple times',
+  },
+  {
+    'version': 'v0.2.3',
+    'notes': 'Improved selection of played color',
+  },
+  {
+    'version': 'v0.2.2',
+    'notes': 'Improved import routine',
+  },
+  {
+    'version': 'v0.2.1',
+    'notes': 'Display of player names and game date; bugfix of icon button label; update of app logo',
+  },
+  {
+    'version': 'v0.2.0',
+    'notes': 'Initial version published to Play Store for internal testing',
+  },
 			];
 
 			const releaseNotesList = document.getElementById('release-notes-list');

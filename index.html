@@ -111,14 +111,14 @@
 					<a title="How to use the software" href="content/image/chess_blunder_trainer_app_analysis.jpg" class="lightbox">
 						<img src="content/image/chess_blunder_trainer_app_analysis.jpg" class="app__screenshot" alt="Use the chess blunder trainer to learn from your past blunders" />
 					</a>
-					<a title="How to avoid blunders by creating puzzles" href="content/image/chess_blunder_trainer_software_puzzles.jpg" class="lightbox">
-						<img src="content/image/chess_blunder_trainer_software_puzzles.jpg" class="app__screenshot" alt="Avoid repeating your past blunders" />
-					</a>
-					<a title="How to improve chess skills with the Chess Blunder Trainer" href="content/image/chess_blunder_trainer_tool_import_your_games.jpg" class="lightbox">
-						<img src="content/image/chess_blunder_trainer_tool_import_your_games.jpg" class="app__screenshot" alt="Import offline games and online games from chess.com or Lichess" />
+					<a title="How to avoid blunders by creating puzzles" href="content/image/chess_blunder_app_puzzles.jpg" class="lightbox">
+						<img src="content/image/chess_blunder_app_puzzles.jpg" class="app__screenshot" alt="App to avoid chess blunders" />
 					</a>
 					<a title="How to prevent mistakes by reviewing past mistakes" href="content/image/chess_blunder_trainer_import_blunders_chesscom.jpg" class="lightbox">
 						<img src="content/image/chess_blunder_trainer_import_blunders_chesscom.jpg" class="app__screenshot" alt="Import offline games and online games from chess.com or Lichess" />
+					</a>
+          <a title="How to improve chess skills with the Chess Blunder Trainer" href="content/image/chess_blunder_import_your_games.jpg" class="lightbox">
+						<img src="content/image/chess_blunder_import_your_games.jpg" class="app__screenshot" alt="Puzzles from your chess games" />
 					</a>
 				</div>
 			</div>
@@ -291,7 +291,31 @@
 	<script>
 		document.addEventListener('DOMContentLoaded', function () {
 			const globalReleaseNotes = [
-			{
+      {
+    'version': 'v3.0.1',
+    'notes': 'minor bug fixes and improvements',
+  },
+  {
+    'version': 'v3.0.0',
+    'notes': 'Revamp of user interface and navigation; various bug fixes and improvements',
+  },
+  {
+    'version': 'v2.9.0',
+    'notes': 'Implementation of random mode to review all blunders in random order',
+  },
+  {
+    'version': 'v2.8.0',
+    'notes': 'Major code refactoring of internal data structure',
+  },
+  {
+    'version': 'v2.7.0',
+    'notes': 'Major code refactoring, especially main code and improve page; various bug fixes and improvements',
+  },
+  {
+    'version': 'v2.6.0',
+    'notes': 'Responsive improve page design for small screens / Google Play Games on PC integration; various bug fixes and improvements; code refactoring, especially import and select pages',
+  },
+  {
     'version': 'v2.5.0',
     'notes': 'Complete redesign of import status information',
   },
@@ -301,11 +325,12 @@
   },
   {
     'version': 'v2.3.0',
-    'notes': 'Addition of button to jump to external Lichess aalysis for current board position',
+    'notes': 'Addition of button to jump to external Lichess analysis for current board position',
   },
   {
     'version': 'v2.2.0',
-    'notes': 'Various UI improvements including additional tooltips and snackbars; press blunder icon long to change blunder move arrow default behavior; update of chess engine to meet Android requirements',
+    'notes':
+        'Various UI improvements including additional tooltips and snackbars; press blunder icon long to change blunder move arrow default behavior; update of chess engine to meet Android requirements',
   },
   {
     'version': 'v2.1.0',
